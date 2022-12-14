@@ -13,6 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let planets = PlanetController.planets
+        
+        for planet in planets {
+            print("Planet Name: \(planet.planetName)")
+        }
+        
         // Override point for customization after application launch.
         return true
     }
