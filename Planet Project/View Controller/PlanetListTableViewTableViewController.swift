@@ -13,6 +13,7 @@ class PlanetListTableViewTableViewController: UITableViewController {
         super.viewDidLoad()
         title = "Solar System"
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.tintColor = UIColor.white
     }
     //this gets called when ever the view appears :)
     override func viewWillAppear(_ animated: Bool) {

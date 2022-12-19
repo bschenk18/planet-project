@@ -29,6 +29,7 @@ class Planet{
     var isFavorite: Bool //true or false
     //initializer
     init(planetName: String, planetDescription: String,orderNumber: Int, planetType: String, moonCount: Int, ringCount: Int, distanceFromSun: Double, isFavorite: Bool = false) {
+        
         self.planetName = planetName
         self.planetDescription = planetDescription
         self.imageName = planetName.lowercased()
@@ -40,9 +41,13 @@ class Planet{
         self.isFavorite = isFavorite
     }
 }
-
+//Planet type description
 enum PlanetType: String {
     case iceGiant = "Ice Giant"
     case gasGiant = "Gas Giant"
     case terrestrial = "Terrestrial"
+}
+//Planet order number
+enum PlanetOrder: Int {
+    case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
 }
