@@ -26,4 +26,9 @@ struct PlanetController {
         
         Planet(planetName: "Neptune", planetDescription: "Roman god of the sea", orderNumber: 8, planetType: PlanetType.iceGiant.rawValue, moonCount: 14, ringCount: 5, distanceFromSun: 30.1)
     ]
+    
+    //Updates the isFavorite bool value of a planet
+    static func updateFavorite(planet: Planet) {
+        planet.isFavorite = !planet.isFavorite
+    }
 }

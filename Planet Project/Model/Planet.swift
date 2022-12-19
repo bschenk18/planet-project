@@ -18,7 +18,6 @@ planet description
  */
 
 class Planet{
-    
     let planetName: String
     let planetDescription: String
     let imageName: String
@@ -27,8 +26,9 @@ class Planet{
     let moonCount: Int
     let ringCount: Int
     let distanceFromSun: Double
-    
-    init(planetName: String, planetDescription: String,orderNumber: Int, planetType: String, moonCount: Int, ringCount: Int, distanceFromSun: Double) {
+    var isFavorite: Bool //true or false
+    //initializer
+    init(planetName: String, planetDescription: String,orderNumber: Int, planetType: String, moonCount: Int, ringCount: Int, distanceFromSun: Double, isFavorite: Bool = false) {
         self.planetName = planetName
         self.planetDescription = planetDescription
         self.imageName = planetName.lowercased()
@@ -37,6 +37,7 @@ class Planet{
         self.moonCount = moonCount
         self.ringCount = ringCount
         self.distanceFromSun = distanceFromSun
+        self.isFavorite = isFavorite
     }
 }
 
